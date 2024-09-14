@@ -1,12 +1,21 @@
+package frame;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class LMain {
-	
+import valueObject.VUser;
+
+public class LMainFrame {
+
 	private JFrame mainFrame;
 	private JPanel mainPanel;
-	
-	private void initialize() {
+	public LMainFrame() {
+		
+		
+	}
+
+	public void initialize(VUser vUser) {
+
 		this.mainFrame = new JFrame();
 		this.mainPanel = new JPanel();
 		
@@ -17,18 +26,5 @@ public class LMain {
 		
 		this.mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
-	public LMain() {
-		
-	}
-
-	public static void main(String[] args) {
-		LMain main = new LMain();
-		//프로그램이 시작되는 위치
-		main.initialize();
-		
-	}
-
-	
 
 }
